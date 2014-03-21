@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" >Giraffe
+    </string>
+    <string name="action_settings" >Settings
+    </string>
+    <string-array name="quotes" >
+        <item>Author 1|Kaszka dzieciom brzuszek goi</item>
+        <item>Author 2|Kalafior i takie tam</item>
+        <item>Author 3|Dziendobrybardzo</item>
+        <item>Author 3|Oszukali nas rumuni </item>
+        <item>|KAFIOR</item>
+        <item>|POMARAŃCZA</item>
+        <item>|LASER TAG</item>
+        <item>|Pierwsza Komunia Święta</item>
+        <item>Wysokie góry są wysokie</item>
+    </string-array>
+
+
+</resources>

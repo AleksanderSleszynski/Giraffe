@@ -5,7 +5,37 @@
     </string>
     <string name="action_settings" >Settings
     </string>
-    <string name="hello_world" >Hello world!
-    </string>
+    <string-array name="quotes" >
+        <item>Albert Einstein|A person who never made a mistake never tried anything new.</item>
+        <item>Albert Einstein|Two things are infinite: the universe and human stupidity; and I\'m not sure about the universe.</item>
+        <item>Albert Einstein|Strive not to be a success, but rather to be of value.</item>
+        <item>Bill Cosby|The past is a ghost, the future a dream. All we ever have is now.</item>
+        <item>Bob Dylan|What’s money? A man is a success if he gets up in the morning and goes to bed at night and in between does what he wants to do.</item>
+        <item>Christopher Columbus|You can never cross the ocean until you have the courage to lose sight of the shore.</item>
+        <item>Confucius|It does not matter how slowly you go as long as you do not stop.</item>
+        <item>Douglas Adams|In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.</item>
+        <item>Douglas Adams|Flying is learning how to throw yourself at the ground and miss.</item>
+        <item>Douglas Adams|I think fish is nice, but then I think that rain is wet, so who am I to judge? </item>
+        <item>Frank Sinatra|The best revenge is massive success.</item>
+        <item>Frank Zappa|So many books, so little time.</item>
+        <item>Good friends are hard to find, harder to leave, and impossible to forget.</item>
+        <item>Jesus|Ask and it will be given to you; search, and you will find; knock and the door will be opened for you.</item>
+        <item>John Lennon|Life is what happens to you while you’re busy making other plans.</item>
+        <item>Lao Tzu|When I let go of what I am, I become what I might be.</item>
+        <item>Mahatma Gandhi|Be the change that you wish to see in the world.</item>
+        <item>Marie Curie|We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.</item>
+        <item>Marilyn Monroe|I\'m selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can\'t handle me at my worst, then you sure as hell don\'t deserve me at my best.</item>
+        <item>Mark Twain|If you tell the truth, you don\'t have to remember anything.</item>
+        <item>Mea West|You only live once, but if you do it right, once is enough.</item>
+        <item>Napoleon Hill|Whatever the mind of man can conceive and believe, it can achieve.</item>
+        <item>Oscar Wiled|Be yourself; everyone else is already taken.</item>
+        <item>Pablo Picasso|Every child is an artist.  The problem is how to remain an artist once he grows up.</item>
+        <item>Steve Jobs|Your time is limited, so don’t waste it living someone else/’s life.</item>
+        <item>Steve Jobs|The only way to do great work is to love what you do.</item>
+        <item>William Shakespeare|The fool doth think he is wise, but the wise man knows himself to be a fool.</item>
+        <item>Vincent van Gogh|I would rather die of passion than of boredom.</item>
+        <item>Zig Ziglar|If you can dream it, you can achieve it.</item>
+    </string-array>
+
 
 </resources>
