@@ -46,7 +46,6 @@ public class MainActivity extends Activity {
     //TODO: robisz sobie listę [1,2,3,..., 10] z każdym nowym wylosowaniem dodajesz do tej listy
 
     //private String[] a;
-    //private final int ARRAYLENGTH = 10;
 
     // private void wylosuj(){
     //while()
@@ -99,10 +98,12 @@ public class MainActivity extends Activity {
         Resources res = getResources();
         quotes = res.getStringArray(R.array.quotes);
         String q;
-        q = quotes[rgenerator.nextInt(quotes.length)];
 
         //TODO:Zrobić w tym miejscu losowanie bez powtarzania ;)
 
+        do{q = quotes[rgenerator.nextInt(quotes.length)];}
+        while(!lastQuote.contains(q))
+/*
         if(lastQuote.size() > 10 ) {
             lastQuote.remove(0);
             Log.v("kutas","wyrzucam");
@@ -112,7 +113,7 @@ public class MainActivity extends Activity {
             }
 
         }
-
+*/
         Log.v("kutas", lastQuote.toString());
         return q.split("\\|");
         //lastQuote.add(q);
