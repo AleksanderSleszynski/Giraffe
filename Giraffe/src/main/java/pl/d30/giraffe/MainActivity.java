@@ -5,10 +5,12 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
+import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class MainActivity extends Activity {
@@ -42,6 +44,15 @@ public class MainActivity extends Activity {
 
     //TODO: teraz zrób tak, żeby nie losował się ten sam string dwa razy pod rząd a najlepiej tak, że
     //TODO: robisz sobie listę [1,2,3,..., 10] z każdym nowym wylosowaniem dodajesz do tej listy
+
+    //private String[] a;
+    //private final int ARRAYLENGTH = 10;
+
+    // private void wylosuj(){
+    //while()
+    // }
+    private ArrayList lastQuote = new ArrayList();
+
 
     /* pseudokod:
 
@@ -87,8 +98,28 @@ public class MainActivity extends Activity {
     private String[] quoteRandom(){
         Resources res = getResources();
         quotes = res.getStringArray(R.array.quotes);
-        String q = quotes[rgenerator.nextInt(quotes.length)];
+        String q;
+        q = quotes[rgenerator.nextInt(quotes.length)];
+
+        //TODO:Zrobić w tym miejscu losowanie bez powtarzania ;)
+
+        if(lastQuote.size() > 10 ) {
+            lastQuote.remove(0);
+            Log.v("kutas","wyrzucam");
+        } else {
+            while (!lastQuote.contains(q)) {
+                lastQuote.add(q);
+            }
+
+        }
+
+        Log.v("kutas", lastQuote.toString());
         return q.split("\\|");
+        //lastQuote.add(q);
+
+
+
 
     };
+
 }

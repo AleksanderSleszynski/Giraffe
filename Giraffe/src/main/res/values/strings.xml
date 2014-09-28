@@ -6,6 +6,30 @@
     <string name="action_settings" >Settings
     </string>
     <string-array name="quotes" >
+
+        <item>|0.</item>
+        <item>|1.</item>
+        <item>|2.</item>
+        <item>|3.</item>
+        <item>|4.</item>
+        <item>|5.</item>
+        <item>|6.</item>
+        <item>|7.</item>
+        <item>|8.</item>
+        <item>|9.</item>
+        <item>|10.</item>
+        <item>|11.</item>
+        <item>|12.</item>
+        <item>|13.</item>
+        <item>|14.</item>
+        <item>|15.</item>
+        <item>|16.</item>
+        <item>|17.</item>
+        <item>|18.</item>
+        <item>|19.</item>
+        <item>|20.</item>
+
+        <!--
         <item>Albert Einstein|A person who never made a mistake never tried anything new.</item>
         <item>Albert Einstein|Two things are infinite: the universe and human stupidity; and I\'m not sure about the universe.</item>
         <item>Albert Einstein|Strive not to be a success, but rather to be of value.</item>
@@ -35,6 +59,7 @@
         <item>William Shakespeare|The fool doth think he is wise, but the wise man knows himself to be a fool.</item>
         <item>Vincent van Gogh|I would rather die of passion than of boredom.</item>
         <item>Zig Ziglar|If you can dream it, you can achieve it.</item>
+        -->
     </string-array>
 
 
