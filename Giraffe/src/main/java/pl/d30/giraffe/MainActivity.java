@@ -32,8 +32,8 @@ public class MainActivity extends Activity {
         author = (TextView) findViewById(R.id.author);
 
         setNewQuote();
+    // TODO: Zrobić dwa guziki następny i poprzedni cytat(Guziki zamienić na swipe)
     // TODO: Nastepny swipe w prawo poprzedni swipe w lewo klikniecie na cytat losowanie nastepnego
-    // TODO: Zrobić 10 ostatnich zapamietanych przy uzyciu listy
         quote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,31 +42,9 @@ public class MainActivity extends Activity {
         });
     }
 
-    //TODO: teraz zrób tak, żeby nie losował się ten sam string dwa razy pod rząd a najlepiej tak, że
-    //TODO: robisz sobie listę [1,2,3,..., 10] z każdym nowym wylosowaniem dodajesz do tej listy
 
-    //private String[] a;
-
-    // private void wylosuj(){
-    //while()
-    // }
     private ArrayList lastQuote = new ArrayList();
 
-
-    /* pseudokod:
-
-     a = []
-    def wylosuj():
-        while( wylosuj in a);
-        return wolosowany
-
-     cytat = wylosuj()
-     a.push(cytat)
-     if( a.length>10) usun_pierwszy_element( a )
-
-     wstaw_w_odpowiednie_miejsce(cytat)
-     // good luck :)
-     */
 
     private void setNewQuote() {
         String[] temp = quoteRandom();
@@ -97,30 +75,29 @@ public class MainActivity extends Activity {
     private String[] quoteRandom(){
         Resources res = getResources();
         quotes = res.getStringArray(R.array.quotes);
-        String q;
 
-        //TODO:Zrobić w tym miejscu losowanie bez powtarzania ;)
+        lengthQuote(); //This method delete first
 
-        do{q = quotes[rgenerator.nextInt(quotes.length)];}
-        while(!lastQuote.contains(q))
-/*
-        if(lastQuote.size() > 10 ) {
-            lastQuote.remove(0);
-            Log.v("kutas","wyrzucam");
-        } else {
-            while (!lastQuote.contains(q)) {
-                lastQuote.add(q);
-            }
+        String q ;
+        q = quotes[rgenerator.nextInt(quotes.length)];
+
+        while (lastQuote.contains(q)) {
+            q = quotes[rgenerator.nextInt(quotes.length)];
 
         }
-*/
-        Log.v("kutas", lastQuote.toString());
-        return q.split("\\|");
-        //lastQuote.add(q);
 
+        lastQuote.add(q);
+
+       // Log.v("kutas", lastQuote.toString());
+        return q.split("\\|");
 
 
 
     };
 
+    private void lengthQuote(){
+        if(lastQuote.size() > 10){
+            lastQuote.remove(0);
+        }
+    };
 }
